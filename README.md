@@ -25,3 +25,9 @@ Articles, useful resources, courseware, homework and personal notes.
 
 * [Firebase Console](https://console.firebase.google.com)
 * [Firebase CLI](https://firebase.google.com/docs/cli/)
+
+### Auditing PWA apps
+
+* [Polymer Project Shop](https://shop.polymer-project.org) case study
+* [Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) _auditing and performance metrics for Progressive Web Apps_ [Lighthoust Quick Start](http://bit.ly/lighthouse-quickstart)
+* Chrome Inspect `chrome://inspect` and Chrome Tracing `chrome://tracing`
