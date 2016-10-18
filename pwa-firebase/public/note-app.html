@@ -19,13 +19,66 @@
         signed-in="{{signedIn}}"
         user="{{user}}">
     </firebase-auth>
+    <paper-fab
+        icon="add"
+        on-tap="create"
+        disabled="[[!online]]"
+        aria-label="Add note">
+    </paper-fab>
+    <na-editor
+        id="editor"
+        note="{{editableNote}}"
+        on-close="commitChange">
+    </na-editor>
+    <firebase-document
+        id="document"
+        app-name="notes"
+        path="[[editableNoteId]]"
+        data="{{editableNote}}">
+    </firebase-document>
+    <firebase-query
+        id="query"
+        app-name="notes"
+        path="/notes/[[user.uid]]"
+        data="{{notes}}">
+    </firebase-query>
+    <app-indexeddb-mirror
+        session="[[user.uid]]"
+        key="notes"
+        data="{{notes}}"
+        persisted-data="{{persistedNotes}}">
+    </app-indexeddb-mirror>
+    <div class="notes">
+        <template is="dom-repeat" items="[[persistedNotes]]" as="note">
+            <na-note
+                id$="[[note.$key]]"
+                title="[[note.title]]"
+                body="[[note.body]]"
+                on-tap="edit">
+            </na-note>
+        </template>
+    </div>    
   </template>
   <script>
     Polymer({
       is: 'note-app',
+
       behaviors: [Polymer.NoteAppBehavior],
+
       signIn: function() {
         this.$.auth.signInWithPopup();
+      },
+
+      get notesPath() {
+        return '/notes/' + this.user.uid;
+      },
+
+      toEditableId: function(noteId) {
+        return this.notesPath + '/' + noteId;
+      },
+
+      get isEditable() {
+        return this.online;
       }
     });
   </script>
