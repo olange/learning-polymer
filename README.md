@@ -2,6 +2,8 @@
 
 Articles, useful resources, courseware, homework and personal notes.
 
+[![Join the chat at https://gitter.im/olange/learning-polymer](https://badges.gitter.im/olange/learning-polymer.svg)](https://gitter.im/olange/learning-polymer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Events
 
 * [Polymer Summit 2006](https://www.polymer-project.org/summit/schedule) _schedule_
