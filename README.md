@@ -6,7 +6,7 @@ Articles, useful resources, courseware, homework and personal notes.
 
 ## Events
 
-* [Polymer Summit 2006](https://www.polymer-project.org/summit/schedule) _schedule_
+* [Polymer Summit 2016](https://www.polymer-project.org/summit/schedule) London, Tobacco Docks, 17-18.10.2016 [videos of the conferences](https://www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ)
 
 ## Codelabs
 
