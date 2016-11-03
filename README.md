@@ -12,6 +12,8 @@ Articles, useful resources, courseware, homework and personal notes.
 
 * [Build a Progressive Web App with Firebase, Polymerfire and Polymer Components](https://codelabs.developers.google.com/codelabs/polymer-firebase-pwa/index.html) _18.09.2016 Polymer Summit_  
 [My codelab source code](https://github.com/olange/learning-polymer/tree/master/pwa-firebase) _A beginner project, demonstrating reuse of prepared Polymer elements to build an online note editor app, with Google OAuth authentication and Firebase persistence._
+* [Building an Image Carousel Element with Polymer 2.0](https://codelabs.developers.google.com/codelabs/polymer-2-carousel/)  
+[My codelab source code](https://github.com/olange/learning-polymer/tree/master/carousel)
 
 ## Tools
 
