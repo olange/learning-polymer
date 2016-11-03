@@ -6,7 +6,7 @@ Articles, useful resources, courseware, homework and personal notes.
 
 ## Events
 
-* [Polymer Summit 2006](https://www.polymer-project.org/summit/schedule) _schedule_
+* [Polymer Summit 2016](https://www.polymer-project.org/summit/schedule) London, Tobacco Docks, 17-18.10.2016 [videos of the conferences](https://www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ)
 
 ## Codelabs
 
@@ -25,3 +25,9 @@ Articles, useful resources, courseware, homework and personal notes.
 
 * [Firebase Console](https://console.firebase.google.com)
 * [Firebase CLI](https://firebase.google.com/docs/cli/)
+
+### Auditing PWA apps
+
+* [Polymer Project Shop](https://shop.polymer-project.org) case study
+* [Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) _auditing and performance metrics for Progressive Web Apps_ [Lighthoust Quick Start](http://bit.ly/lighthouse-quickstart)
+* Chrome Inspect `chrome://inspect` and Chrome Tracing `chrome://tracing`
