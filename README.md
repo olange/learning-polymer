@@ -6,13 +6,14 @@ Articles, useful resources, courseware, homework and personal notes.
 
 ## Events
 
-* [Polymer Summit 2016](https://www.polymer-project.org/summit/schedule) London, Tobacco Docks, 17-18.10.2016 [videos of the conferences](https://www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ)
+* [Polymer Summit 2016](https://www.polymer-project.org/summit/schedule) London, Tobacco Docks, 17-18.10.2016  
+[Videos of the conferences](https://www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ) YouTube, 41 videos of the 2 days
 
 ## Codelabs
 
 * [Build a Progressive Web App with Firebase, Polymerfire and Polymer Components](https://codelabs.developers.google.com/codelabs/polymer-firebase-pwa/index.html) _18.10.2016 Polymer Summit_  
 [My codelab source code](https://github.com/olange/learning-polymer/tree/master/pwa-firebase) _A beginner project, demonstrating reuse of prepared Polymer elements to build an online note editor app, with Google OAuth authentication and Firebase persistence._
-* [Building an Image Carousel Element with Polymer 2.0](https://codelabs.developers.google.com/codelabs/polymer-2-carousel/) _17.10.2016 Polymer Summit_ 
+* [Building an Image Carousel Element with Polymer 2.0](https://codelabs.developers.google.com/codelabs/polymer-2-carousel/) _17.10.2016 Polymer Summit_  
 [My codelab source code](https://github.com/olange/learning-polymer/tree/master/carousel) _A beginner project, demonstrating how to use Polymer 2.0 with ES2015 class syntax, while building a simple image carousel and gradually adding features to it._
 
 ## Tools
