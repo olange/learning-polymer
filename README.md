@@ -16,6 +16,10 @@ Articles, useful resources, courseware, homework and personal notes.
 * [Building an Image Carousel Element with Polymer 2.0](https://codelabs.developers.google.com/codelabs/polymer-2-carousel/) _17.10.2016 Polymer Summit_  
 [My codelab source code](https://github.com/olange/learning-polymer/tree/master/carousel) _A beginner project, demonstrating how to use Polymer 2.0 with ES2015 class syntax, while building a simple image carousel and gradually adding features to it._
 
+## Articles
+
+* [What is shady DOM?](https://www.polymer-project.org/1.0/blog/shadydom) (Polymer Project Blog, Scott Miles, 2015-05-28)
+
 ## Tools
 
 ### Polymer
