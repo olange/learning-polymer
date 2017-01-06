@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <!-- Load the Polymer.Element base class -->
 <link rel="import" href="bower_components/polymer/polymer-element.html">
 
-<dom-module id="my-carousel">
+<dom-module id="image-carousel">
   <template>
 
     <style>
@@ -36,9 +36,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script>
 
     // Extend Polymer.Element base class
-    class MyCarousel extends Polymer.Element {
+    class ImageCarousel extends Polymer.Element {
 
-      static get is() { return 'my-carousel' }
+      static get is() { return 'image-carousel' }
 
       static get config() {
         // properties, observers meta data
@@ -53,7 +53,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     // Register custom element definition using standard platform API
-    customElements.define(MyCarousel.is, MyCarousel);
+    customElements.define(ImageCarousel.is, ImageCarousel);
 
   </script>
 </dom-module>
