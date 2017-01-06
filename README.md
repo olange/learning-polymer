@@ -19,6 +19,12 @@ Articles, useful resources, courseware, homework and personal notes.
 ## Articles
 
 * [What is shady DOM?](https://www.polymer-project.org/1.0/blog/shadydom) (Polymer Project Blog, Scott Miles, 2015-05-28)
+* The four Web Components standards:
+ * [Shadow DOM specification](http://w3c.github.io/webcomponents/spec/shadow/) (W3C Editor's Draft, 28.11.2016)
+ * [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom) (Google Web Fundamentals, Eric Bidelman)
+ * [HTML's New Template Tag](https://www.html5rocks.com/en/tutorials/webcomponents/template/) (HTML5Rocks, Eric Bidelman, 26.02.2013)
+ * [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/getting-started/primers/customelements) (Google Web Fundamentals, Eric Bidelman)
+ * [HTML Imports](https://www.html5rocks.com/en/tutorials/webcomponents/imports/) (HTML5Rocks, Eric Bidelman, 11.11.2013)
 
 ## Tools
 
