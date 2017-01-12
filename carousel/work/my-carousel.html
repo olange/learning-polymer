@@ -13,7 +13,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <dom-module id="image-carousel">
   <template>
-
     <style>
       :host {
         display: block;
@@ -24,17 +23,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       div > ::slotted(:not([selected])) {
         display: none;
       }
+
+      button {
+        position: absolute;
+        top: calc(50% - 20px);
+        padding: 0;
+        line-height: 40px;
+        border: none;
+        background: none;        
+        color: #DDD;
+        opacity: 0.7;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      button:hover,
+      button:focus {
+        opacity: 1;
+      }
+
+      #prevBtn {
+        left: 12px;
+      }
+
+      #nextBtn {
+        right: 12px;
+      }
+
+      button[disabled] {
+        opacity: 0.4;
+      }      
     </style>
 
     <div>
       <slot></slot>
     </div>
 
+    <button id="prevBtn" on-click="previous">❮</button>
+    <button id="nextBtn" on-click="next">❯</button>
   </template>
 
-
   <script>
-
     // Extend Polymer.Element base class
     class ImageCarousel extends Polymer.Element {
 
@@ -42,18 +71,45 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       static get config() {
         // properties, observers meta data
-        return {};
+        return {
+          properties: {
+            selected: {
+              type: Object,
+              observer: '_selectedChanged'
+            }
+          }
+        };
       }
 
       connectedCallback() {
         super.connectedCallback();
-        this.firstElementChild.setAttribute('selected', '');
-      } 
+        this.selected = this.firstElementChild;
+      }
 
+      _selectedChanged( selected, oldSelected) {
+        if (oldSelected) oldSelected.removeAttribute( 'selected');
+        if (selected) selected.setAttribute( 'selected', '');
+
+        this.$.prevBtn.disabled = !selected.previousElementSibling;
+        this.$.nextBtn.disabled = !selected.nextElementSibling;
+      }
+
+      previous() {
+        const elem = this.selected.previousElementSibling;
+        if (elem) {
+          this.selected = elem;
+        }
+      }
+
+      next() {
+        const elem = this.selected.nextElementSibling;
+        if (elem) {
+          this.selected = elem;
+        }
+      }
     }
 
     // Register custom element definition using standard platform API
-    customElements.define(ImageCarousel.is, ImageCarousel);
-
+    customElements.define( ImageCarousel.is, ImageCarousel);
   </script>
 </dom-module>
