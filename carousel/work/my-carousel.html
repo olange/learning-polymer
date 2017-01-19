@@ -10,6 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!-- Load the Polymer.Element base class -->
 <link rel="import" href="bower_components/polymer/polymer-element.html">
+<link rel="import" href="my-mixin.html">
 
 <dom-module id="image-carousel">
   <template>
@@ -65,30 +66,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <script>
     // Extend Polymer.Element base class
-    class ImageCarousel extends Polymer.Element {
+    class ImageCarousel extends MyMixin(Polymer.Element) {
 
       static get is() { return 'image-carousel' }
 
-      static get config() {
-        // properties, observers meta data
-        return {
-          properties: {
-            selected: {
-              type: Object,
-              observer: '_selectedChanged'
-            }
-          }
-        };
-      }
-
       connectedCallback() {
         super.connectedCallback();
-        this.selected = this.firstElementChild;
       }
 
       _selectedChanged( selected, oldSelected) {
-        if (oldSelected) oldSelected.removeAttribute( 'selected');
-        if (selected) selected.setAttribute( 'selected', '');
+        super._selectedChanged(selected, oldSelected);
 
         this.$.prevBtn.disabled = !selected.previousElementSibling;
         this.$.nextBtn.disabled = !selected.nextElementSibling;

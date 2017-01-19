@@ -1,0 +1,29 @@
+<script>
+
+  const MyMixin = subclass => class extends subclass {
+
+    static get config() {
+      // properties, observers meta data
+      return {
+        properties: {
+          selected: {
+            type: Object,
+            observer: '_selectedChanged'
+          }
+        }
+      };
+    }
+
+    connectedCallback() {
+      super.connectedCallback();
+      this.selected = this.firstElementChild;
+    }
+
+    _selectedChanged(selected, oldSelected) {
+      if (oldSelected) oldSelected.removeAttribute('selected');
+      if (selected) selected.setAttribute('selected', '');
+    }
+
+  };
+
+</script>
