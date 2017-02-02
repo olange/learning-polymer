@@ -8,6 +8,22 @@
 
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="import" href="my-carousel.html">
+  <style>
+    image-carousel {
+      width: 100%;
+      contain: content;
+    }
+    image-carousel::after {
+      display: block;
+      content: '';
+      padding-top: 75%; /* 4:3 = height is 75% of width */
+    }
+    image-carousel img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
