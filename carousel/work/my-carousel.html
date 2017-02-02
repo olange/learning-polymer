@@ -76,10 +76,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       _selectedChanged( selected, oldSelected) {
-        super._selectedChanged(selected, oldSelected);
+        super._selectedChanged( selected, oldSelected);
 
         this.$.prevBtn.disabled = !selected.previousElementSibling;
         this.$.nextBtn.disabled = !selected.nextElementSibling;
+
+        this._loadImage( selected);
+        this._loadImage( selected.previousElementSibling);
+        this._loadImage( selected.nextElementSibling);
+      }
+
+      _loadImage( img) {
+        if (img && !img.src) {
+          img.src = img.getAttribute( "data-src");
+        }
       }
 
       previous() {
