@@ -67,12 +67,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <script>
     // Extend Polymer.Element base class
-    class ImageCarousel extends MyMixin(Polymer.Element) {
+    class ImageCarousel extends MyMixin( Polymer.Element) {
 
       static get is() { return 'image-carousel' }
 
       connectedCallback() {
         super.connectedCallback();
+
+        // Because we know there isn't going to be a transition until after
+        // the first frame, we can reduce the initialization time of our element
+        // by installing our event listener asynchronously
+        requestAnimationFrame( this._installListeners.bind( this));
+      }
+
+      _translateX( elem, x, transition) {
+        elem.style.display = 'block';
+        elem.style.transition = transition ? 'transform 0.2s' : '';
+        elem.style.transform = 'translate3d(' + x + 'px, 0, 0)';
       }
 
       _selectedChanged( selected, oldSelected) {
@@ -92,17 +103,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
       }
 
+      _installListeners() {
+        this.addEventListener( 'transitionend', this._resetChildrenStyles.bind( this));
+      }
+
+      _resetChildrenStyles() {
+        let elem = this.firstElementChild;
+        while( elem) {
+          elem.style.display = '';
+          elem.style.transition = '';
+          elem.style.transform = '';
+          elem = elem.nextElementSibling;
+        }
+      }
+
       previous() {
         const elem = this.selected.previousElementSibling;
-        if (elem) {
+        if( elem) {
+          // Setup transition start state
+          const oldSelected = this.selected;
+          this._translateX( oldSelected, 0);
+          this._translateX( elem, -this.offsetWidth);
+
+          // Start the transition
           this.selected = elem;
-        }
+          this._translateX( oldSelected, this.offsetWidth, true /* transition */);
+          this._translateX( elem, 0, true /* transition */);
+        }        
       }
 
       next() {
         const elem = this.selected.nextElementSibling;
-        if (elem) {
+        if( elem) {
+          // Setup transition start state
+          const oldSelected = this.selected;
+          this._translateX( oldSelected, 0);
+          this._translateX( elem, this.offsetWidth);
+
+          // Start the transition
           this.selected = elem;
+          this._translateX( oldSelected, -this.offsetWidth, true /* transition */);
+          this._translateX( elem, 0, true /* transition */);
         }
       }
     }
