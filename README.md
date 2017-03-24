@@ -27,6 +27,10 @@ Articles, useful resources, courseware, homework and personal notes.
  * [HTML Imports](https://www.html5rocks.com/en/tutorials/webcomponents/imports/) (HTML5Rocks, Eric Bidelman, 11.11.2013)
 * [Are we componized yet?](http://jonrimmer.github.io/are-we-componentized-yet/) (John Rimmer) _a matrix synthetizing current support status of the four Web Components Standards in the various browsers_
 * [«Real» Mixins with JavaScript Classes](http://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/) (Justin Fagnani's blog, 21.12.2015) _ what mixins should do, what's wrong with current JavaScript mixins, and how simple it is to build a very capable mixin system in JavaScript that plays extremely well with classes_
+* [Regarding the broken promise of Web Components](https://robdodson.me/regarding-the-broken-promise-of-web-components/) Rob Dodson, 15.03.2017, in response to  
+  [The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/#brief-incomplete-and-mostly-incorrect-history-of-web-components) Dmitrii Dimandt, 14.03.2017
+* [Custom Elements That Work Anywhere](https://medium.com/dev-channel/custom-elements-that-work-anywhere-898e1dd2bc48#.xbmcc634v) Rob Dodson, 30.06.2016
+* [Javascript Tools: A Story in Disgrace](https://dmitriid.com/blog/2016/10/javascript-tools/) Dmitrii Dimandt, 14.03.2017 _an opinion article, about state of JavaScript app dev; many interesting references_
 
 ## Tools
 
