@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "PolymerVizCodelab",
-  "short_name": "PolymerVizCodelab",
-  "description": "",
+  "name": "polymer-viz-codelab",
+  "short_name": "Polymer Visualization Codelab",
+  "description": "A visualization of thousands of data points over an interactive Google Map, taking advantage of Polymer and some Google Web Components",
   "version": "0.0.1",
   "minimum_chrome_version": "38",
 
