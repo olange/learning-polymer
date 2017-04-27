@@ -1,13 +1,13 @@
 {
   "name": "PolymerVizCodelab",
-  "description": "",
-  "homepage": "",
-  "keywords": [
-  ],
-  "author": "",
+  "description": "A visualization of thousands of data points over an interactive Google Map, taking advantage of Polymer and some Google Web Components",
+  "homepage": "https://codelabs.developers.google.com/codelabs/polymer-webgl/",
+  "keywords": [ "polymer", "codelab", "maps", "visualization" ],
+  "author": "Olivier Lange",
   "private": true,
   "dependencies": {
     "iron-elements": "PolymerElements/iron-elements#^1.0.0",
-    "paper-elements": "PolymerElements/paper-elements#^1.0.1"
+    "paper-elements": "PolymerElements/paper-elements#^1.0.1",
+    "google-map": "GoogleWebComponents/google-map#^1.2.0"
   }
 }
