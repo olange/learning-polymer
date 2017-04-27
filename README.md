@@ -12,9 +12,10 @@ Articles, useful resources, courseware, homework and personal notes.
 ## Codelabs
 
 * [Build a Progressive Web App with Firebase, Polymerfire and Polymer Components](https://codelabs.developers.google.com/codelabs/polymer-firebase-pwa/index.html) _18.10.2016 Polymer Summit_  
-[My codelab source code](https://github.com/olange/learning-polymer/tree/master/pwa-firebase) _A beginner project, demonstrating reuse of prepared Polymer elements to build an online note editor app, with Google OAuth authentication and Firebase persistence._
+([My codelab source code](https://github.com/olange/learning-polymer/tree/master/pwa-firebase)) _A beginner project, demonstrating reuse of prepared Polymer elements to build an online note editor app, with Google OAuth authentication and Firebase persistence._
 * [Building an Image Carousel Element with Polymer 2.0](https://codelabs.developers.google.com/codelabs/polymer-2-carousel/) _17.10.2016 Polymer Summit_  
-[My codelab source code](https://github.com/olange/learning-polymer/tree/master/carousel) _A beginner project, demonstrating how to use Polymer 2.0 with ES2015 class syntax, while building a simple image carousel and gradually adding features to it._
+([My codelab source code](https://github.com/olange/learning-polymer/tree/master/carousel)) _A beginner project, demonstrating how to use Polymer 2.0 with ES2015 class syntax, while building a simple image carousel and gradually adding features to it._
+* [Auth0 › Build Your First App with Polymer and Web Components](https://auth0.com/blog/build-your-first-app-with-polymer-and-web-components/) (Auth0 blog, Kim Maida, 05.10.2016) _Build an app using web components and Polymer that interacts with an API and authenticates users with JSON Web Tokens (JWT)._
 
 ## Articles
 
@@ -26,13 +27,13 @@ Articles, useful resources, courseware, homework and personal notes.
  * [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/getting-started/primers/customelements) (Google Web Fundamentals, Eric Bidelman)
  * [HTML Imports](https://www.html5rocks.com/en/tutorials/webcomponents/imports/) (HTML5Rocks, Eric Bidelman, 11.11.2013)
 * [Are we componized yet?](http://jonrimmer.github.io/are-we-componentized-yet/) (John Rimmer) _a matrix synthetizing current support status of the four Web Components Standards in the various browsers_
-* [«Real» Mixins with JavaScript Classes](http://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/) (Justin Fagnani's blog, 21.12.2015) _ what mixins should do, what's wrong with current JavaScript mixins, and how simple it is to build a very capable mixin system in JavaScript that plays extremely well with classes_
+* [«Real» Mixins with JavaScript Classes](http://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/) (Justin Fagnani's blog, 21.12.2015) _what mixins should do, what's wrong with current JavaScript mixins, and how simple it is to build a very capable mixin system in JavaScript that plays extremely well with classes_
 * [Regarding the broken promise of Web Components](https://robdodson.me/regarding-the-broken-promise-of-web-components/) Rob Dodson, 15.03.2017, in response to  
   [The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/#brief-incomplete-and-mostly-incorrect-history-of-web-components) Dmitrii Dimandt, 14.03.2017
 * [Custom Elements That Work Anywhere](https://medium.com/dev-channel/custom-elements-that-work-anywhere-898e1dd2bc48#.xbmcc634v) Rob Dodson, 30.06.2016
 * [Javascript Tools: A Story in Disgrace](https://dmitriid.com/blog/2016/10/javascript-tools/) Dmitrii Dimandt, 14.03.2017 _an opinion article, about state of JavaScript app dev; many interesting references_
 
-## Tools
+## Tools
 
 ### Polymer
 
@@ -40,7 +41,7 @@ Articles, useful resources, courseware, homework and personal notes.
 * [Polymer Build](https://github.com/Polymer/polymer-build)
 * [Polymer Editor plug-in](https://github.com/Polymer/polymer-editor-service)
 
-### Storage
+### Storage
 
 * [Firebase Console](https://console.firebase.google.com)
 * [Firebase CLI](https://firebase.google.com/docs/cli/)
