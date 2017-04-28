@@ -2,25 +2,33 @@
 <html>
 <head>
   <title>Polymer Visualization Codelab</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
   <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
   <link rel="import" href="bower_components/google-map/google-map.html">
   <link rel="import" href="bower_components/point-overlay/point-overlay.html">
   <link rel="import" href="bower_components/paper-card/paper-card.html">
   <link rel="import" href="bower_components/paper-slider/paper-slider.html">
   <link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body unresolved>
-  <template is="dom-bind">   
+  <template is="dom-bind" id="mapTemplate">   
     <google-map map="{{map}}" latitude="38.6" longitude="-95.8" zoom="5"
-      styles='[{"stylers":[{"saturation":-85}]},{"featureType":"water","stylers":[{"lightness":-20}]}]'>
+      styles='[{"stylers":[{"saturation":-85}]},{"featureType":"water","stylers":[{"lightness":-20}]}]'
+      on-google-map-ready="setPointSize"
+      on-zoom-changed="setPointSize">
     </google-map>
 
     <point-overlay map="[[map]]" uniforms="{{uniforms}}" data="[[data]]">
     </point-overlay>
 
     <paper-card elevation="2">
-      <paper-slider min="5" max="100" value="30" immediate-value="{{uniforms.pointSize}}">
+      <paper-slider min="5" max="50" value="10" immediate-value="{{uniforms.pointSize}}">
       </paper-slider>
     </paper-card>
 
@@ -29,6 +37,17 @@
       last-response="{{data}}">
     </iron-ajax>
   </template>
+
+  <script>
+    // Define a function in the template's lexical scope, that is registered 
+    // with the `on-zoom-changed` and `on-google-map-ready` event listeners
+    // of the `<google-maps>` element above
+    var mapTemplate = document.querySelector( "#mapTemplate");
+    mapTemplate.setPointSize = function( e) {
+      this.uniforms.pointSize = Math.exp( 0.3 * this.map.getZoom());
+      this.notifyPath( "uniforms.pointSize", this.uniforms.pointSize);
+    };
+  </script>  
   <!-- Geneva / Skatepark: latitude="46.1994539" longitude="6.1392783" zoom="17" -->
   <!-- Geneva / Somewhere near Skatepark: data='[{"lat": 46.200, "lng": 6.1392783}]' -->
 </body>
