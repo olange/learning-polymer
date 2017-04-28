@@ -7,21 +7,29 @@
   <link rel="import" href="bower_components/point-overlay/point-overlay.html">
   <link rel="import" href="bower_components/paper-card/paper-card.html">
   <link rel="import" href="bower_components/paper-slider/paper-slider.html">
+  <link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body unresolved>
-  <template is="dom-bind">
-    <google-map map="{{map}}" latitude="46.1994539" longitude="6.1392783" zoom="17"
+  <template is="dom-bind">   
+    <google-map map="{{map}}" latitude="38.6" longitude="-95.8" zoom="5"
       styles='[{"stylers":[{"saturation":-85}]},{"featureType":"water","stylers":[{"lightness":-20}]}]'>
     </google-map>
 
-    <point-overlay map="[[map]]" uniforms="{{uniforms}}" data='[{"lat": 46.200, "lng": 6.1392783}]'>
+    <point-overlay map="[[map]]" uniforms="{{uniforms}}" data="[[data]]">
     </point-overlay>
 
     <paper-card elevation="2">
       <paper-slider min="5" max="100" value="30" immediate-value="{{uniforms.pointSize}}">
       </paper-slider>
-    </paper-card>    
+    </paper-card>
+
+    <iron-ajax auto handle-as="json"
+      url="bower_components/point-overlay/tornadoes-1950-2014.json"
+      last-response="{{data}}">
+    </iron-ajax>
   </template>
+  <!-- Geneva / Skatepark: latitude="46.1994539" longitude="6.1392783" zoom="17" -->
+  <!-- Geneva / Somewhere near Skatepark: data='[{"lat": 46.200, "lng": 6.1392783}]' -->
 </body>
 </html>
