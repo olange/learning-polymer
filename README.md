@@ -35,6 +35,11 @@ Articles, useful resources, courseware, homework and personal notes.
 * [Custom Elements That Work Anywhere](https://medium.com/dev-channel/custom-elements-that-work-anywhere-898e1dd2bc48#.xbmcc634v) Rob Dodson, 30.06.2016
 * [Javascript Tools: A Story in Disgrace](https://dmitriid.com/blog/2016/10/javascript-tools/) Dmitrii Dimandt, 14.03.2017 _an opinion article, about state of JavaScript app dev; many interesting references_
 
+## Books
+
+* [Production-Ready Microservices](https://www.safaribooksonline.com/library/view/production-ready-microservices/9781491965962/) by Susan J. Fowler, O'Reilly, 12.2016
+* [Microservice Architecture](https://www.safaribooksonline.com/library/view/microservice-architecture/9781491956328/) by Mike Amundsen, Matt McLarty, Ronnie Mitra, Irakli Nadareishvili, O'Reilly, 08.2016
+
 ## Tools
 
 ### Polymer
