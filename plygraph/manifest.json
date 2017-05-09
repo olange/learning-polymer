@@ -1,0 +1,7 @@
+{
+  "name": "plygraph",
+  "short_name": "plygraph",
+  "description": "A simple Polymer app showing contents of a Neo4j Graph database",
+  "start_url": "/",
+  "display": "standalone"
+}

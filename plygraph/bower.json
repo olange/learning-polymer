@@ -1,0 +1,12 @@
+{
+  "name": "plygraph",
+  "description": "A simple Polymer app showing contents of a Neo4j Graph database",
+  "main": "index.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0-rc.3"
+  },
+  "devDependencies": {
+    "web-component-tester": "^6.0.0-prerelease.5",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.7"
+  }
+}
