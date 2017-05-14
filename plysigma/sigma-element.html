@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<!--<link rel="import" href="../polymer/lib/elements/dom-if.html">-->
+<!--<link rel="import" href="../polymer/lib/elements/dom-repeat.html">-->
+
+<!--
+  `sigma-element`
+  A Sigma.js-driven Graph Drawing Polymer Element
+
+  @demo demo/index.html
+-->
+
+<dom-module id="sigma-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /** @polymerElement */
+    class SigmaElement extends Polymer.Element {
+      static get is() { return 'sigma-element'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'sigma-element'
+          }
+        };
+      }
+    }
+
+    window.customElements.define( SigmaElement.is, SigmaElement);
+  </script>
+</dom-module>
