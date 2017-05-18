@@ -38,7 +38,6 @@ Articles, useful resources, courseware, homework and personal notes.
 * [Polymer Guides › Responsive Material Design Layouts](https://elements.polymer-project.org/guides/responsive-material-design-layouts)
 * [Polymer Guides › Using Elements](https://elements.polymer-project.org/guides/using-elements)
 
-
 ## Books
 
 * [Production-Ready Microservices](https://www.safaribooksonline.com/library/view/production-ready-microservices/9781491965962/) by Susan J. Fowler, O'Reilly, 12.2016
