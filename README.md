@@ -8,6 +8,8 @@ Articles, useful resources, courseware, homework and personal notes.
 
 * [Polymer Summit 2016](https://www.polymer-project.org/summit/schedule) London, Tobacco Docks, 17-18.10.2016  
 [Videos of the conferences](https://www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ) YouTube, 41 videos of the 2 days
+* [Google I/O 2017](https://events.google.com/io/)
+  [Future, faster: Unlock the power of Web Components with Polymer](https://www.youtube.com/watch?v=cuoZenpQveQ&list=PLNYkxOF6rcICniLJ2rfj0FexlA-9zmJJE&index=2) Google, Wendy Ginsberg and Kevin Schaaf, 17.05.2017 (video, 43 min.)
 
 ## Codelabs
 
