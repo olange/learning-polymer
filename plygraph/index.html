@@ -11,12 +11,47 @@
     <link rel="manifest" href="/manifest.json">
 
     <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="import" href="/bower_components/app-layout/app-layout.html">
     <link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="/bower_components/paper-item/paper-icon-item.html">
+    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="import" href="/src/graph-app/graph-app.html">
 
-    <style is="custom-style" include="iron-flex"></style>
+    <style is="custom-style" include="iron-flex iron-positioning">
+      body { font-family: 'Roboto', Helvetica, sans-serif; }
+      app-header { background-color: #1E88E5; color: white; }
+      app-drawer { --app-drawer-scrim-background: rgba(0, 0, 0, 0.25); }
+    </style>
   </head>
-  <body class="fullbleed vertical layout">
-    <graph-app class="flex"></graph-app>
+  <body>
+    <app-header-layout fullbleed>
+      <app-header slot="header" fixed shadow>
+        <app-toolbar sticky>
+          <div main-title>Graph Viewer App</div>
+          <paper-icon-button icon="menu" onClick="drawer.toggle()"></paper-icon-button>
+          <paper-progress value="10" indeterminate bottom-item></paper-progress>
+        </app-toolbar>
+      </app-header>
+      <graph-app class="flex"></graph-app>
+    </app-header-layout>
+    <app-drawer id="drawer" align="end" swipe-open>
+      <paper-icon-item aria-disabled="false" disabled="true">
+        <iron-icon icon="favorite" slot="item-icon"></iron-icon>
+        <span>Favorite</span>
+      </paper-icon-item>
+      <paper-icon-item aria-disabled="false">
+        <iron-icon icon="archive" slot="item-icon"></iron-icon>
+        <span>Archive</span>
+      </paper-icon-item>
+      <paper-icon-item aria-disabled="false">
+        <iron-icon icon="backup" slot="item-icon"></iron-icon>
+        <span>Backup</span>
+      </paper-icon-item>
+      <paper-icon-item aria-disabled="false">
+        <iron-icon icon="dashboard" slot="item-icon"></iron-icon>
+        <span>Dashboard</span>
+      </paper-icon-item>
+    </app-drawer>
   </body>
 </html>
