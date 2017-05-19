@@ -19,6 +19,14 @@ Articles, useful resources, courseware, homework and personal notes.
 * [Auth0 › Build Your First App with Polymer and Web Components](https://auth0.com/blog/build-your-first-app-with-polymer-and-web-components/) _Auth0 blog, Kim Maida, 05.10.2016_  
   _Build an app using web components and Polymer that interacts with an API and authenticates users with JSON Web Tokens (JWT)._
 
+## Supporting or related technologies
+
+* [Google Material Design](https://material.io/guidelines/material-design/introduction.html) _A graphical system and visual language, that synthesizes classic principles of good design with the innovation and possibility of technology and science; develops a single underlying system that allows for a unified experience across platforms and device sizes_
+* [Polymer App Toolbox](https://www.polymer-project.org/2.0/toolbox/index) _A collection of components, tools and templates for building Progressive Web Apps with Polymer, which features: component-based architecture; responsive design; modular routing; localization; turnkey support for app local storage;
+offline caching; build tooling to support serving your app multiple ways (unbundled/HTTP2, bundled/HTTP1)_
+* [Progressive Web Apps · Guidelines](https://developers.google.com/web/progressive-web-apps) _A set of guidelines, that provide user experiences that have the reach of the web, and are_ reliable: _load instantly, even in uncertain network conditions_; fast: _respond quickly to user interactions_; engaging: _feel like a natural app on the device_
+* [Polymer App Toolbox · PRPL Pattern](https://www.polymer-project.org/2.0/toolbox/prpl) Push _critical resources for the initial route_; Render _initial route_; Pre-cache _remaining routes_; Lazy-load _and create remaining routes on demand_
+
 ## Articles
 
 * [What is shady DOM?](https://www.polymer-project.org/1.0/blog/shadydom) (Polymer Project Blog, Scott Miles, 2015-05-28)
@@ -34,16 +42,26 @@ Articles, useful resources, courseware, homework and personal notes.
   [The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/#brief-incomplete-and-mostly-incorrect-history-of-web-components) Dmitrii Dimandt, 14.03.2017
 * [Custom Elements That Work Anywhere](https://medium.com/dev-channel/custom-elements-that-work-anywhere-898e1dd2bc48#.xbmcc634v) Rob Dodson, 30.06.2016
 * [Javascript Tools: A Story in Disgrace](https://dmitriid.com/blog/2016/10/javascript-tools/) Dmitrii Dimandt, 14.03.2017 _an opinion article, about state of JavaScript app dev; many interesting references_
-* [Polymer Guides › Flexbox layout with iron-flex-layout](https://elements.polymer-project.org/guides/flex-layout)
-* [Polymer Guides › Responsive Material Design Layouts](https://elements.polymer-project.org/guides/responsive-material-design-layouts)
-* [Polymer Guides › Using Elements](https://elements.polymer-project.org/guides/using-elements)
+* [Polymer Guides › Flexbox layout with iron-flex-layout](https://elements.polymer-project.org/guides/flex-layout) _A guide to the two different ways of using the `iron-flex-layout` component – which provides simple ways to use CSS flexible box layout (flexbox): either the layout classes, which let us specify layout properties directly in markup; or the_ [custom CSS mixins](https://www.polymer-project.org/1.0/docs/devguide/styling.html#custom-style), _that can be `@apply`-ied inside CSS rules_
+* [Polymer Guides › Responsive Material Design Layouts](https://elements.polymer-project.org/guides/responsive-material-design-layouts) _A short guide, that teaches how to use_ [Paper](https://www.webcomponents.org/collection/PolymerElements/paper-ui-elements), [Iron](https://www.webcomponents.org/collection/PolymerElements/iron-elements) _and_ [Iron Flex](https://www.webcomponents.org/element/PolymerElements/iron-flex-layout) _elements to create a responsive layout_
+* [Polymer Guides › Using Elements](https://elements.polymer-project.org/guides/using-elements) _An overview of the primary collections of elements, how-to install and use them in a main page or an element; provides also a quick overview of_ [data binding](https://www.polymer-project.org/1.0/docs/devguide/data-binding.html), _of_ [mapping attribute names to property names](https://elements.polymer-project.org/guides/using-elements#polymer-element-apis) _and of_ [DOM manipulation](https://www.polymer-project.org/1.0/docs/devguide/local-dom.html#dom-api) _concepts_
 
 ## Books
 
 * [Production-Ready Microservices](https://www.safaribooksonline.com/library/view/production-ready-microservices/9781491965962/) by Susan J. Fowler, O'Reilly, 12.2016
 * [Microservice Architecture](https://www.safaribooksonline.com/library/view/microservice-architecture/9781491956328/) by Mike Amundsen, Matt McLarty, Ronnie Mitra, Irakli Nadareishvili, O'Reilly, 08.2016
 
+## See also
+
+* [10 Best ReactJS UI Frameworks for rapid prototyping](https://hashnode.com/post/10-best-reactjs-ui-frameworks-for-rapid-prototyping-cit49tqx414z89c53equ4zc5k) hashnode, Tom Alter, 15.09.2016
+* [React · Material UI](http://www.material-ui.com/#/) _A set of React Components that Implement Google's Material Design_
+* [Foundation](http://foundation.zurb.com) _A family of responsive front-end frameworks, for any device, medium, and accessibility; semantic, readable, flexible, and completely customizable; can be applied to websites, apps and e-mails_
+
 ## Tools
+
+### Material Design
+
+* [Material Design · Color tool](http://material.io/color/) _create, share, and apply color palettes to your UI, as well as measure the accessibility level of any color combination_
 
 ### Polymer
 
