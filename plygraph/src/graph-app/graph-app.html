@@ -1,15 +1,27 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 <!--<link rel="import" href="../../bower_components/polymer/lib/elements/dom-if.html">-->
 <!--<link rel="import" href="../../bower_components/polymer/lib/elements/dom-repeat.html">-->
 
 <dom-module id="graph-app">
   <template>
+    <style include="iron-flex iron-flex-alignment"></style>
     <style>
       :host {
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+    <div class="layout vertical">
+      <div>
+        Header
+      </div>
+      <div class="flex">
+        <h2>Hello [[prop1]]!</h2>
+      </div>
+      <div>
+        Footer
+      </div>
+    </div>
   </template>
 
   <script>

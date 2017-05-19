@@ -11,10 +11,12 @@
     <link rel="manifest" href="/manifest.json">
 
     <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
-
+    <link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout-classes.html">
     <link rel="import" href="/src/graph-app/graph-app.html">
+
+    <style is="custom-style" include="iron-flex"></style>
   </head>
-  <body>
-    <graph-app></graph-app>
+  <body class="fullbleed vertical layout">
+    <graph-app class="flex"></graph-app>
   </body>
 </html>

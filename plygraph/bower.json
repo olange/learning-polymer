@@ -3,7 +3,8 @@
   "description": "A simple Polymer app showing contents of a Neo4j Graph database",
   "main": "index.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0-rc.3"
+    "polymer": "Polymer/polymer#^2.0.0-rc.3",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout"
   },
   "devDependencies": {
     "web-component-tester": "^6.0.0-prerelease.5",
