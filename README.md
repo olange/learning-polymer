@@ -34,6 +34,9 @@ Articles, useful resources, courseware, homework and personal notes.
   [The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/#brief-incomplete-and-mostly-incorrect-history-of-web-components) Dmitrii Dimandt, 14.03.2017
 * [Custom Elements That Work Anywhere](https://medium.com/dev-channel/custom-elements-that-work-anywhere-898e1dd2bc48#.xbmcc634v) Rob Dodson, 30.06.2016
 * [Javascript Tools: A Story in Disgrace](https://dmitriid.com/blog/2016/10/javascript-tools/) Dmitrii Dimandt, 14.03.2017 _an opinion article, about state of JavaScript app dev; many interesting references_
+* [Polymer Guides › Flexbox layout with iron-flex-layout](https://elements.polymer-project.org/guides/flex-layout)
+* [Polymer Guides › Responsive Material Design Layouts](https://elements.polymer-project.org/guides/responsive-material-design-layouts)
+* [Polymer Guides › Using Elements](https://elements.polymer-project.org/guides/using-elements)
 
 ## Books
 
