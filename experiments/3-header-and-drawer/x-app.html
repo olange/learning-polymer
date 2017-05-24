@@ -1,0 +1,73 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="bower_components/app-layout/demo/sample-content.html">
+
+<dom-module id="x-app">
+
+  <template>
+
+    <style>
+      app-header {
+        background-color: #00897B;
+        color: #fff;
+      }
+      paper-icon-button {
+        --paper-icon-button-ink-color: white;
+      }
+
+      /* NOTE: With app-layout 2.0, the drawer-toggle element will not be 
+         automatically hidden when app-drawer-layout is not in narrow layout.
+         To add this, add the following CSS rule where app-drawer-layout is used: */
+      app-drawer-layout:not([narrow]) [drawer-toggle] {
+        display: none;
+      }
+    </style>
+
+    <!-- <app-drawer-layout fullbleed> -->
+      <app-header-layout fullbleed>
+
+        <app-header slot="header" effects="waterfall" reveals>
+          <app-toolbar>
+            <paper-icon-button id="paper-icon-button" icon="menu" drawer-toggle></paper-icon-button>
+            <div main-title>App header layout</div>
+          </app-toolbar>
+        </app-header>
+
+        <sample-content size="100"></sample-content>
+
+      </app-header-layout>
+
+      <app-drawer id="app-drawer">
+        <app-toolbar>Getting Started</app-toolbar>
+      </app-drawer>
+
+    <!-- </app-drawer-layout> -->
+
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'x-app',
+      ready: function(){
+        console.log("Ready !");
+        this.bindDrawerButton();
+      },
+      bindDrawerButton: function() {
+        var drawer = this.$["app-drawer"];
+        this.$["paper-icon-button"].addEventListener('click', function() {
+          drawer.toggle();
+        });
+      }
+    });
+
+  </script>
+
+</dom-module>

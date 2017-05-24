@@ -1,0 +1,40 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<dom-module id="x-app">
+
+  <template>
+
+    <!-- 
+      Include flex classes in an element.
+      If you want to include the flex classes in the main document, use:
+        <style is="custom-style" include="iron-flex"> 
+    -->
+    <style include="iron-flex">
+      div.box {
+        margin: 1px;
+        padding: 5px 10px;
+        background-color: aquamarine;
+      }
+      div.box.flex {
+        text-align: center;
+      }
+    </style>
+    <div class="layout horizontal ">
+      <div class="box">Hello</div>
+      <div class="box flex">Hello</div>
+      <div class="box">Hello</div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'x-app',
+      ready: function(){
+        console.log("Ready !");
+      }
+    });
+
+  </script>
+
+</dom-module>
