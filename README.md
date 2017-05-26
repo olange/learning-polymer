@@ -89,3 +89,7 @@ offline caching; build tooling to support serving your app multiple ways (unbund
 
 * [Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) _auditing and performance metrics for Progressive Web Apps_ [Lighthoust Quick Start](http://bit.ly/lighthouse-quickstart)
 * Chrome Inspect `chrome://inspect` and Chrome Tracing `chrome://tracing`
+
+### For IDE enthusiasts
+
+* [Visual Studio · Polymer IDE](https://marketplace.visualstudio.com/items?itemName=polymer.polymer-ide) _Unlocks all of the power of the [Polymer Analyzer](https://github.com/Polymer/polymer-analyzer) in VS Code: provides linting, autocompletion, and more for web components_ `ext install polymer-ide`
