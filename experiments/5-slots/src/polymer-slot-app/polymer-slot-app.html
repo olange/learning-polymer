@@ -1,0 +1,61 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="polymer-slot-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      ::slotted([slot=header]) {
+        background-color: #232323;
+        color: white;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+      }
+      ::slotted([slot=footer]) {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: #afafaf;
+        text-align: center;
+        background-color: #232323;
+      }
+      .content {
+        height: 2000px;
+      }
+    </style>
+    <div>
+      <slot name='header'>HEADER</slot>
+      <h2>Hello [[prop1]]!</h2>
+      <div class='content'>
+        <slot>CONTENT</slot>
+      </div>
+      <slot name='footer'>This is my footer</slot>
+    </div>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class PolymerSlotApp extends Polymer.Element {
+      static get is() { return 'polymer-slot-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'polymer-slot-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PolymerSlotApp.is, PolymerSlotApp);
+  </script>
+</dom-module>
