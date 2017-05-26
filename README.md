@@ -55,7 +55,9 @@ offline caching; build tooling to support serving your app multiple ways (unbund
 * [Google Polymer News](https://www.polymer-project.org/2.0/toolbox/news-case-study) _A complete case study of News, a full-featured PWA demo, built using the Toolbox_
 * [Google Polymer Cheese](https://cheese.polymer-project.org/) _Say « cheese » and take a photo; try it on a mobile device_
 * [Google Polymon](https://polymon.polymer-project.org/) _A multiplayer, location-based monster hunting game designed and maintained by the Polymer team; hint, when outside of a Polymer Summit: start at https://twitter.com/0xcda7a to find monsters_
-* [Google Santa Tracker](https://santatracker.google.com/codeboogie.html) _Use Google Santa Tracker to follow Santa Claus on Google Maps as he makes his journey around the world._
+* [Google Santa Tracker](https://santatracker.google.com/codeboogie.html) _Use Google Santa Tracker to follow Santa Claus on Google Maps as he makes his journey around the world_
+* [vpusher Game Card WebComponent](https://www.webcomponents.org/element/vpusher/game-card) _Playing game card element based on ES6 and Polymer 2.0; infinitely scalable, thanks to unicode characters and SVG_
+* [vpusher The Grid WebComponent](https://www.webcomponents.org/element/vpusher/the-grid) _Grid layout custom element based on ES2015 and Polymer 2.0_
 
 ## Books
 
