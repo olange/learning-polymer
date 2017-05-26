@@ -8,7 +8,7 @@ Articles, useful resources, courseware, homework and personal notes.
 
 * [Polymer Summit 2016](https://www.polymer-project.org/summit/schedule) London, Tobacco Docks, 17-18.10.2016  
 [Videos of the conferences](https://www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ) YouTube, 41 videos of the 2 days
-* [Google I/O 2017](https://events.google.com/io/)
+* [Google I/O 2017](https://events.google.com/io/)  
   [Future, faster: Unlock the power of Web Components with Polymer](https://www.youtube.com/watch?v=cuoZenpQveQ&list=PLNYkxOF6rcICniLJ2rfj0FexlA-9zmJJE&index=2) Google, Wendy Ginsberg and Kevin Schaaf, 17.05.2017 (video, 43 min.)
 
 ## Codelabs
@@ -49,6 +49,14 @@ offline caching; build tooling to support serving your app multiple ways (unbund
 * [Polymer Guides › Using Elements](https://elements.polymer-project.org/guides/using-elements) _An overview of the primary collections of elements, how-to install and use them in a main page or an element; provides also a quick overview of_ [data binding](https://www.polymer-project.org/1.0/docs/devguide/data-binding.html), _of_ [mapping attribute names to property names](https://elements.polymer-project.org/guides/using-elements#polymer-element-apis) _and of_ [DOM manipulation](https://www.polymer-project.org/1.0/docs/devguide/local-dom.html#dom-api) _concepts_
 * [WebComponents › Best practices](https://www.webcomponents.org/community/articles/web-components-best-practices) first published 29.04.2014 _a list of best practices, that evolves over time with community suggestions_
 
+## Case studies and fun apps
+
+* [Google Polymer Shop](https://www.polymer-project.org/2.0/toolbox/case-study) _A complete case study of the Shop, a full-featured e-commerce PWA demo, built using the Toolbox_
+* [Google Polymer News](https://www.polymer-project.org/2.0/toolbox/news-case-study) _A complete case study of News, a full-featured PWA demo, built using the Toolbox_
+* [Google Polymer Cheese](https://cheese.polymer-project.org/) _Say « cheese » and take a photo; try it on a mobile device_
+* [Google Polymon](https://polymon.polymer-project.org/) _A multiplayer, location-based monster hunting game designed and maintained by the Polymer team; hint, when outside of a Polymer Summit: start at https://twitter.com/0xcda7a to find monsters_
+* [Google Santa Tracker](https://santatracker.google.com/codeboogie.html) _Use Google Santa Tracker to follow Santa Claus on Google Maps as he makes his journey around the world._
+
 ## Books
 
 * [Production-Ready Microservices](https://www.safaribooksonline.com/library/view/production-ready-microservices/9781491965962/) by Susan J. Fowler, O'Reilly, 12.2016
@@ -79,6 +87,5 @@ offline caching; build tooling to support serving your app multiple ways (unbund
 
 ### Auditing PWA apps
 
-* [Polymer Project Shop](https://shop.polymer-project.org) case study
 * [Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) _auditing and performance metrics for Progressive Web Apps_ [Lighthoust Quick Start](http://bit.ly/lighthouse-quickstart)
 * Chrome Inspect `chrome://inspect` and Chrome Tracing `chrome://tracing`
