@@ -31,6 +31,7 @@ offline caching; build tooling to support serving your app multiple ways (unbund
 
 ## Articles
 
+* [Polymer 2.0 Cheat Sheet](https://meowni.ca/posts/polymer-2-cheatsheet/) (Monica Dindulescu, @notwaldorf)
 * [What is shady DOM?](https://www.polymer-project.org/1.0/blog/shadydom) (Polymer Project Blog, Scott Miles, 2015-05-28)
 * The four [Web Components standards](https://developer.mozilla.org/en-US/docs/Web/Web_Components) (Mozilla Developer Network)
  * [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom) (Google Web Fundamentals, Eric Bidelman)
