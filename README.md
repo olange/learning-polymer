@@ -82,6 +82,7 @@ offline caching; build tooling to support serving your app multiple ways (unbund
 * [Polymer CLI](https://github.com/Polymer/polymer-cli)
 * [Polymer Build](https://github.com/Polymer/polymer-build)
 * [Polymer Editor plug-in](https://github.com/Polymer/polymer-editor-service)
+* [Polymer Designer](http://designer.polymer-project.org/) _see also [Introducing Polymer Designer Tools](https://www.youtube.com/watch?v=djQh8XKRzRg) by Rob Dodson (video, 18 min.)_
 
 ### Storage
 
