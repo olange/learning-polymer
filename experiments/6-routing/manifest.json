@@ -1,0 +1,7 @@
+{
+  "name": "Experiment 6: Routing",
+  "short_name": "Experiment 6: Routing",
+  "description": "Experimenting routing with &lt;app-routing&gt; element",
+  "start_url": "/",
+  "display": "standalone"
+}
