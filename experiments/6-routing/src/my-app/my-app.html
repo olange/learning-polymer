@@ -1,4 +1,8 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../../bower_components/paper-styles/color.html">
 
 <dom-module id="my-app">
   <template>
@@ -6,8 +10,57 @@
       :host {
         display: block;
       }
+      code {
+        background-color: aliceblue;
+      }
+      iron-pages {
+        width: 100%; height: 200px;
+        font-size: 50px; color: white;
+        text-align: center;
+      }
+      iron-pages div {
+        width: 100%; height: 100%;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        background-color: #CCC;
+      }
+      iron-pages div:nth-child(1) {
+        background-color: var(--google-blue-500);
+      }
+      iron-pages div:nth-child(2) {
+        background-color: var(--google-red-500);
+      }
+      iron-pages div:nth-child(3) {
+        background-color: var(--google-green-500);
+      }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+
+    <app-location route="{{route}}" use-hash-as-path></app-location>
+    <app-route
+      route="{{route}}"
+      pattern=":view"
+      data="{{routeData}}"
+      tail="{{subroute}}">
+    </app-route>
+
+    <h2>Hello, &lt;app-route&gt;!</h2>
+    <ul>
+      <li>route: prefix: <code>[[route.prefix]]</code>, path: <code>[[route.path]]</code></li>
+      <li>data: view: <code>[[routeData.view]]</code></li>
+      <li>tail: prefix: <code>[[subroute.prefix]]</code>, path: <code>[[subroute.path]]</code></li>
+    </ul>
+
+    <iron-pages selected="[[routeData.view]]"
+      fallback-selection="fallback"
+      attr-for-selected="name">
+      <div name="one" route="{{subroute}}">One</div>
+      <div name="two" route="{{subroute}}">Two</div>
+      <div name="three" route="{{subroute}}">Three</div>
+      <div name="fallback" route="{{subroute}}">
+        <p>Type <a href="#one">#one</a>, <a href="#two">#two</a>
+        or <a href="#three">#three</a> in the window location bar.</p>
+      </div>
+    </iron-pages>    
   </template>
 
   <script>
@@ -17,16 +70,8 @@
      */
     class MyApp extends Polymer.Element {
       static get is() { return 'my-app'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'my-app'
-          }
-        };
-      }
     }
 
-    window.customElements.define(MyApp.is, MyApp);
+    window.customElements.define( MyApp.is, MyApp);
   </script>
 </dom-module>
