@@ -59,6 +59,7 @@ offline caching; build tooling to support serving your app multiple ways (unbund
 * [Google Santa Tracker](https://santatracker.google.com/codeboogie.html) _Use Google Santa Tracker to follow Santa Claus on Google Maps as he makes his journey around the world_
 * [vpusher Game Card WebComponent](https://www.webcomponents.org/element/vpusher/game-card) _Playing game card element based on ES6 and Polymer 2.0; infinitely scalable, thanks to unicode characters and SVG_
 * [vpusher The Grid WebComponent](https://www.webcomponents.org/element/vpusher/the-grid) _Grid layout custom element based on ES2015 and Polymer 2.0_
+* [Hacker News readers as Progressive Web Apps](https://hnpwa.com/) _unofficial collection of Hacker News clients built with a number of popular JavaScript frameworks and libraries; each implementation is a complete Progressive Web App, that utilizes different progressive technologies to provide a fast, reliable and engaging experience_
 
 ## Books
 
