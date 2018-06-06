@@ -27,12 +27,13 @@ Articles, useful resources, courseware, homework and personal notes.
 * [Polymer App Toolbox](https://www.polymer-project.org/2.0/toolbox/index) _A collection of components, tools and templates for building Progressive Web Apps with Polymer, which features: component-based architecture; responsive design; modular routing; localization; turnkey support for app local storage;
 offline caching; build tooling to support serving your app multiple ways (unbundled/HTTP2, bundled/HTTP1)_
 * [Progressive Web Apps · Guidelines](https://developers.google.com/web/progressive-web-apps) _A set of guidelines, that provide user experiences that have the reach of the web, and are_ reliable: _load instantly, even in uncertain network conditions_; fast: _respond quickly to user interactions_; engaging: _feel like a natural app on the device_
-* [Polymer App Toolbox · PRPL Pattern](https://www.polymer-project.org/2.0/toolbox/prpl) Push _critical resources for the initial route_; Render _initial route_; Pre-cache _remaining routes_; Lazy-load _and create remaining routes on demand_
+* [Polymer App Toolbox · PRPL Pattern](https://www.polymer-project.org/2.0/toolbox/prpl) Push _critical resources for the initial route_; Render _initial route_; Pre-cache _remaining routes_; Lazy-load _and create remaining routes on demand_; see also the [PRPL Server for Node](https://github.com/Polymer/prpl-server-node)
 
 ## Articles
 
+* [ECMAScript modules in browsers](https://jakearchibald.com/2017/es-modules-in-browsers/) (Jake Archibald, 02.05.2017)
 * [Polymer 2.0 Cheat Sheet](https://meowni.ca/posts/polymer-2-cheatsheet/) (Monica Dinculescu, @notwaldorf)
-* [What is shady DOM?](https://www.polymer-project.org/1.0/blog/shadydom) (Polymer Project Blog, Scott Miles, 2015-05-28)
+* [What is shady DOM?](https://www.polymer-project.org/1.0/blog/shadydom) (Polymer Project Blog, Scott Miles, 28.05.2015)
 * The four [Web Components standards](https://developer.mozilla.org/en-US/docs/Web/Web_Components) (Mozilla Developer Network)
  * [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom) (Google Web Fundamentals, Eric Bidelman)
  * [Shadow DOM specification](http://w3c.github.io/webcomponents/spec/shadow/) (W3C Editor's Draft, 28.11.2016)
